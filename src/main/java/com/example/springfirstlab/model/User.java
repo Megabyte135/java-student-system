@@ -20,13 +20,14 @@ public class User {
     @Column(nullable = false)
     private String password;
 
+    @Enumerated(EnumType.STRING)
     @Column(nullable = false)
     private String role;
 
     @PrePersist
     protected void prePersist() {
         if (this.role == null) {
-            this.role = "USER";
+            this.role = Role.STUDENT;
         }
     }
 }
