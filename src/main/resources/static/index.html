@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laboratorka 2</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<h1>Student & Course Management</h1>
+
+<h2>Students</h2>
+<form id="student-form">
+    <input type="text" id="firstName" placeholder="First Name" required>
+    <input type="text" id="lastName" placeholder="Last Name" required>
+    <input type="date" id="dob" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="enroll" placeholder="Enrollment" required>
+    <button type="submit">Add Student</button>
+</form>
+<ul id="student-list"></ul>
+
+<h2>Courses</h2>
+<form id="course-form">
+    <input type="text" id="courseName" placeholder="Course Name" required>
+    <input type="text" id="courseDescription" placeholder="Description" required>
+    <button type="submit">Add Course</button>
+</form>
+<ul id="course-list"></ul>
+
+<script src="script.js"></script>
+</body>
+</html>
